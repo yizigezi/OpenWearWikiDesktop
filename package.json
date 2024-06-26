@@ -1,0 +1,44 @@
+{
+    "name": "openwearwiki",
+    "version": "0.2.0",
+    "description": "Desktop application of OpenWearWiki",
+    "main": "main.js",
+    "scripts": {
+        "start": "electron ."
+    },
+    "keywords": [
+        "openwearwiki",
+        "coratech"
+    ],
+    "author": "CoraTech Workspace",
+    "license": "GPL-3.0",
+    "devDependencies": {
+        "electron": "^31.0.2"
+    },
+    "build": {
+      "productName": "OpenWearWiki Desktop",
+      "appId": "org.cora.oww.desktop",
+      "copyright": "(C)2024, CoraTech Workspace",
+      "win": {
+        "icon": "resource/icon.ico",
+        "target": [
+          {
+            "target": "nsis",
+            "arch": [
+              "x64"
+            ]
+          }
+        ]
+      },
+      "nsis": {
+        "oneClick": false,
+        "allowElevation": true,
+        "allowToChangeInstallationDirectory": true,
+        "installerIcon": "resource/icon.ico",
+        "uninstallerIcon": "resource/icon.ico",
+        "createDesktopShortcut": true,
+        "createStartMenuShortcut": true,
+        "shortcutName": "OpenWearWiki"
+      }
+    }
+}
