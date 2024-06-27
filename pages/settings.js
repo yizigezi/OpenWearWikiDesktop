@@ -4,11 +4,12 @@ exports.SettingsWindow = function() {
     const win = new BrowserWindow({
         width: 747,
         height: 535,
-        icon: '../resource/icon.ico',
+        icon: path.join(__dirname, '../../resource/icon.ico'),
         webPreferences: {
-          preload: path.join(__dirname, 'settings/res/preload.js')
+          preload: path.join(__dirname, 'settings', 'res', 'preload.js')
         }
       });
+      console.log(path.join(__dirname, 'settings', 'res', 'preload.js'))
       win.setResizable(false);
       win.setMenuBarVisibility(false);
       win.loadFile('./pages/settings/settings-page-1.html');

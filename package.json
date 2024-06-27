@@ -19,6 +19,26 @@
       "productName": "OpenWearWiki Desktop",
       "appId": "org.cora.oww.desktop",
       "copyright": "(C)2024, CoraTech Workspace",
+      "extraResources": [
+        {
+          "from": "./config",
+          "to": "./config"
+        },
+        {
+          "from": "./resource",
+          "to": "./resource"
+        },
+        {
+          "from": "./utils",
+          "to": "./utils"
+        }
+      ],
+      "files": [
+        "pages",
+        "src",
+        "main.js",
+        "package.json"
+      ],
       "win": {
         "icon": "resource/icon.ico",
         "target": [

@@ -1,6 +1,7 @@
 const { contextBridge } = require('electron')
 const os = require('node:os')
-const config = require('../../../config/config.json')
+const path = require('node:path')
+const config = require(path.join(__dirname, '../config/config.json'))
 
 
 contextBridge.exposeInMainWorld('configs', {

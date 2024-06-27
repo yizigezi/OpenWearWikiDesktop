@@ -2,5 +2,6 @@
     "feedback_url": "https://forms.office.com/r/1nLfQCjudW",
     "document": {
         "color": "#AF30CF"
-    }
+    },
+    "developerMode": false
 }
